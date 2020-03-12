@@ -17,6 +17,10 @@ import java.util.concurrent.atomic.LongAdder;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+/**
+ * 使用 ConcurrentHashMap 来统计，Key 的范围是 10。
+ * 使用最多 10 个并发，循环操作 1000 万次，每次操作累加随机的 Key。
+ * 如果 Key 不存在的话，首次设置值为 1。*/
 @Controller
 @RequestMapping("/totalkey")
 public class TotalKeyTest {
