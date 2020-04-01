@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 @Controller
-@RequestMapping("copyonwrite")
+@RequestMapping("/copyonwrite")
 public class CopyOnWriteTest {
 
 
