@@ -32,6 +32,7 @@ import java.util.stream.IntStream;
 @RequestMapping("deadlock")
 @Slf4j
 public class DeadLockController {
+
     @Data
     @RequiredArgsConstructor
     static class Item {
